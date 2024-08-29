@@ -82,7 +82,7 @@ exports.plugin = function (schema, options) {
       // If no error then we are ready to continue.
       ready = true;
     })
-    .catch(console.error(err));
+    .catch(console.error);
 
   // Declare a function to get the next counter for the model/schema.
   var nextCount = function () {
